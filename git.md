@@ -69,3 +69,10 @@ git commit -m "msg"
 git checkout *commitID*
 git checkout master // get lasted(prod) version
 ~~~
+
+## Соединение удаленного репозитория с локальным
+Параметр origin - это название источника
+~~~
+git remote add origin url
+git remote -v //make sure that the connection is established
+~~~
