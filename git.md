@@ -49,6 +49,8 @@ git add --all //all files in directory
 > Показывает все коммиты в ветке
 ~~~
 git log
+git log --oneline
+git reflog //more detailed
 ~~~
 
 ## Разница 
@@ -61,6 +63,7 @@ git diff
 > Создает версию (commit)
 ~~~
 git commit -m "msg"
+git commit -am "msg" //short recording. equal two command - git add.. + git commit 
 ~~~
 
 ## Переход к ветке/commit 
@@ -75,4 +78,32 @@ git checkout master // get lasted(prod) version
 ~~~
 git remote add origin url
 git remote -v //make sure that the connection is established
+~~~
+
+## Отслеживания пустых папок
+Перейти в директорию и создать там файл .gitkeep
+~~~
+touch dir/.gitkeep
+~~~
+
+## Правило игнорирование файлов/папок (убрать из отслеживания)
+Перейти в директорию и создать там файл .gitignore
+~~~
+touch dir/.gitignore
+~~~
+Далее в созданный файл можно прописать файлы которые должны игнорироваться
+
+## Возврат к определенному коммиту (сброс текущего состояния истории)
+Команда позваляет вернуться к состоянию определенного коммита. при этом коммит который был сделан случайно пропадет из git log но останется в git reflog и можно откатиться
+> idCash - указать кэш номер коммита к которому хотим откатиться
+~~~
+git reset idCash
+~~~
+отмена последствий коммита
+~~~
+git revert idCash
+~~~
+Сброс состояния файла на указанное
+~~~
+git restore idCash
 ~~~
