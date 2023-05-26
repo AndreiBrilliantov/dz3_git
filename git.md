@@ -1,13 +1,46 @@
-test
+# Основные команды GIT
 
-*Curcive*
+## Инициализация 
+> Для работы с ГИТ необходимо перейти в папку в которой расположены файлы для отслеживания их версий
 
+~~~
 git init
-git status
-git add git.md
-git log
-git commit -m "msg"
-git checkout #commit
-git checkout master
+~~~
 
-test2
+## Статус 
+> Выводит информацию по текущему коммиту
+~~~
+git status
+~~~
+
+## Отслеживание файла 
+> Команда определяет какой файл в директории необходимо отслеживать 
+~~~
+git add git.md
+git add --all //all files in directory
+~~~
+
+## История всех коммитов 
+> Показывает все коммиты в ветке
+~~~
+git log
+~~~
+
+## Разница 
+> Команда выодит строки в которых есть различия. Если нет различий - ничего не выведет
+~~~
+git diff
+~~~
+
+## Коммит (Commit) 
+> Создает версию (commit)
+~~~
+git commit -m "msg"
+~~~
+
+## Переход к ветке/commit 
+> Осуществляет переход к ветке или коммиту
+~~~
+git checkout *commitID*
+git checkout master // get lasted(prod) version
+~~~
