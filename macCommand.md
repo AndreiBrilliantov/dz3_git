@@ -2,6 +2,7 @@
 Просмотр файлов и папок в директории
 ~~~
 ls
+ls -a //show all files including hidden ones
 ~~~
 Перейти на директорию выше
 ~~~
@@ -13,11 +14,11 @@ cd ~
 ~~~
 Перейти в директорию по пути
 ~~~
-cd *directoryName/*
+cd [directoryName/]
 ~~~
 Создать файл
 ~~~
-touch *fileName.fileType*
+touch [fileName.fileType]
 ~~~
 Записать строчку в файл
 ~~~
@@ -33,7 +34,7 @@ mv fileName.txt newFileName.py // can specify the directory
 ~~~
 Скопировать файл
 ~~~
-cp *newFileName.txt*
+cp [newFileName.txt]
 ~~~
 Удалить файл
 ~~~
