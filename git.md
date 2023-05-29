@@ -5,11 +5,11 @@
 ## Настройки пользователей
 >Устанавливает логин пользователя которое будет записываться при каждом изменении (видят другие разработчики)
 ~~~
-git config --global user.name "**name**"
+git config --global user.name "[name]"
 ~~~
 >Устанавливает почту (видят другие разработчики)
 ~~~
-git config --global user.email "**email**"
+git config --global user.email "[email]"
 ~~~
 >Включает подсветку при использовании терминала
 ~~~
@@ -17,7 +17,7 @@ git config --global color.ui auto
 ~~~
 >Если хотим использовать свой тектовый редактор для git
 ~~~
-git config --global core.editor "**program**"
+git config --global core.editor "[program]"
 ~~~
 >Показывает примененные настройки
 ~~~
@@ -69,7 +69,7 @@ git commit -am "msg" //short recording. equal two command - git add.. + git comm
 ## Переход к ветке/commit 
 > Осуществляет переход к ветке или коммиту
 ~~~
-git checkout *commitID*
+git checkout [commitID]
 git checkout master // get lasted(prod) version
 ~~~
 
