@@ -42,7 +42,7 @@ git status
 > Команда определяет какой файл в директории необходимо отслеживать 
 ~~~
 git add git.md
-git add --all //all files in directory
+git add --all // include all files in directory (git add . )
 ~~~
 
 ## История всех коммитов 
@@ -95,15 +95,20 @@ touch dir/.gitignore
 
 ## Возврат к определенному коммиту (сброс текущего состояния истории)
 Команда позваляет вернуться к состоянию определенного коммита. при этом коммит который был сделан случайно пропадет из git log но останется в git reflog и можно откатиться
-> idCash - указать кэш номер коммита к которому хотим откатиться
+> idHash - указать кэш номер коммита к которому хотим откатиться
 ~~~
-git reset idCash
+git reset idHash
 ~~~
 отмена последствий коммита
 ~~~
-git revert idCash
+git revert idHash
 ~~~
 Сброс состояния файла на указанное
 ~~~
-git restore idCash
+git restore idHash
+~~~
+
+~~~
+git cat-file -p idHash
+git cat file -t idHash
 ~~~
