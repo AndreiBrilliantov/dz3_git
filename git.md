@@ -112,3 +112,14 @@ git restore idHash
 git cat-file -p idHash
 git cat file -t idHash
 ~~~
+
+## Работа с ветками
+Посмотреть существующие ветки
+~~~bash
+git branch
+~~~
+
+Создать новую ветку
+~~~bash
+git branch [name_branch]
+~~~
