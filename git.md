@@ -63,7 +63,7 @@ git diff
 > Создает версию (commit)
 ~~~bash
 git commit -m "msg"
-git commit -am "msg" //short recording. equal two command - git add.. + git commit 
+git commit -am "msg" #short recording. equal two command - git add.. + git commit 
 ~~~
 
 ## Переход к ветке/commit 
@@ -77,7 +77,7 @@ git checkout master # get lasted(prod) version
 Параметр origin - это название источника
 ~~~bash
 git remote add origin url
-git remote -v //make sure that the connection is established
+git remote -v # make sure that the connection is established
 ~~~
 
 ## Отслеживания пустых папок
