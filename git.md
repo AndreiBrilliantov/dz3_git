@@ -50,7 +50,8 @@ git add --all # include all files in directory (git add . )
 ~~~bash
 git log
 git log --oneline
-git reflog //more detailed
+git log --graph # show branches with commits
+git reflog #more detailed
 ~~~
 
 ## Разница 
