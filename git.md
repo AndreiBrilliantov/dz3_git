@@ -51,6 +51,7 @@ git add --all # include all files in directory (git add . )
 git log
 git log --oneline
 git log --graph # show branches with commits
+git log --graph --oneline
 git reflog #more detailed
 ~~~
 
@@ -137,4 +138,3 @@ git branch -d branchName
 ~~~bash
 git merge branchName
 ~~~
-### Конфликты
