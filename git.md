@@ -69,8 +69,8 @@ git commit -am "msg" //short recording. equal two command - git add.. + git comm
 ## Переход к ветке/commit 
 > Осуществляет переход к ветке или коммиту
 ~~~bash
-git checkout [commitID]
-git checkout master // get lasted(prod) version
+git checkout [commitID/branch]
+git checkout master # get lasted(prod) version
 ~~~
 
 ## Соединение удаленного репозитория с локальным
@@ -114,6 +114,8 @@ git cat file -t idHash
 ~~~
 
 ## Работа с ветками
+>При необходимости внести изменения в проекте обязательно разработчик создает ветку по которой работает
+
 Посмотреть существующие ветки
 ~~~bash
 git branch
