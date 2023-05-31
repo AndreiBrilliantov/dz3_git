@@ -123,3 +123,14 @@ git branch
 ~~~bash
 git branch [name_branch]
 ~~~
+
+Удаление ветки
+~~~bash
+git branch -d branchName
+~~~
+
+### Деплой ветки
+Добавляет ветку в master. Необходимо сначала перейти в ветку к которой будет добавлена данная ветка. После слияния можно удалить ветку
+~~~bash
+git merge branchName
+~~~
