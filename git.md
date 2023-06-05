@@ -122,7 +122,14 @@ git cat file -t idHash
 ~~~bash
 git branch
 ~~~
-
+Показывает все ветки которые есть (в том числе remote)
+~~~bash
+git branch -a
+~~~
+Переименовать основную ветку
+~~~bash
+git branch -M [newName]
+~~~
 Создать новую ветку
 ~~~bash
 git branch [name_branch]
@@ -140,7 +147,18 @@ git merge branchName
 ~~~
 
 # Работа с удаленными репозиториями
-
+Показывает какие удаленные серверы подключены к локальному репозиторию (Лучше чтобы была связка один сервер к одному лок. репо.)
+~~~bash
+git remote
+git remote -v # Показывает протоколы подключения и доступные команды
+~~~
+~~~bash
+git remote add [nameRemoteRepo] # nameRemoteRepo - use origin
+~~~
+Показывает связь локальной ветки с remote
+~~~bash
+git branch -vv
+~~~
 Склонировать на локальную машину удаленный репозтторий
 ~~~bash
 git clone [urlGitHubRepo]
@@ -154,7 +172,10 @@ git pull
 ~~~bash
 git push
 ~~~
-
+Отправляет локальную ветку на удаленный репозиторий.
+~~~bash
+git push -u [nameRemoteRepo] [nameLocalBranch]
+~~~
 ## Как сделать pull request
 Для того чтобы отправить свои дополнения к чужему проекту необходимо выполнить pull request:
 * Делаем fork репозитория (при этом появляется копия на Вашем GitHub аккаунте с указанием на ориг.)
