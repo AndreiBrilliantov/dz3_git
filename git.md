@@ -164,7 +164,7 @@ git branch -vv
 git clone [urlGitHubRepo]
 ~~~
 Скачать актуальную версию удаленного репозитория.
-<br> При этом применяется merge
+При этом применяется merge
 ~~~bash
 git pull
 ~~~
