@@ -132,7 +132,7 @@ git branch -M [newName]
 ~~~
 Создать новую ветку
 ~~~bash
-git branch [name_branch]
+git branch -b [name_branch] # Параметр -b осуществляет переход к новой ветке
 ~~~
 
 Удаление ветки
