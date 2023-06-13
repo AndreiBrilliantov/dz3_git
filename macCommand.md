@@ -3,6 +3,7 @@
 ~~~bash
 ls
 ls -a #show all files including hidden ones
+ls -al # all caps
 ~~~
 Перейти на директорию выше
 ~~~bash
